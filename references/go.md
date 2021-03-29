@@ -118,13 +118,13 @@ condition := db.Cond("id", ids).Cond("l.depth", 2).Cond("author", 1).Sortby("mod
 db.Cond("id>", ids)
 db.Cond("id >", ids)
 
-//id equals 3
+//id等于3
 db.Cond("id", 3)
 
-//id in 1, 3
+//在1, 3中
 db.Cond("id", []int{1, 3})
 
-//id in 1, 3 and author is 1
+//id在1, 3中,而且author等于1
 db.Cond("id", []int{1, 3}).Cond("author", 1)
 ```
 
