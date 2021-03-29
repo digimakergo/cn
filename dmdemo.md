@@ -26,15 +26,15 @@ nav_order: 2
  //启动服务器
  dmapp=. go run cmd/main.go
 ```
-  访问: http://localhost:9200
+  访问网站: http://localhost:9200
 
-Build前台web app
+前台web app
 
 ```sh
    cd web/app
    npm install
    npm run build
-   (or just "npm start" and visit http://localhost:3000)
+   (或者直接 "npm start" 然后访问http://localhost:3000)
 ```
   访问: http://localhost:9200/mypage (登陆信息: `member/digimaker`)
 
