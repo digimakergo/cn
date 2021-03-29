@@ -26,7 +26,7 @@ nav_order: 0
  //启动服务器
  dmapp=. go run cmd/main.go
 ```
-  View frontend: http://localhost:9200
+  访问: http://localhost:9200
 
 Build前台web app
 
