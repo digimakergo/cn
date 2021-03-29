@@ -31,32 +31,25 @@ has_toc: true
 ### 内容相关
 
 #### dm.fetch_byid
-Parameter(int): id of the locaiton. 
-
-Result(ContentTyper): content which has the location id
+参数(int): location id. 
+返回(ContentTyper): 指定id的内容
 ```
 {% raw %}{% set content = dm.fetch_byid( 3 ) %}{% endraw %}
 ```
 
 
 #### dm.parent
-Parameter(ContentTyper)
+参数(ContentTyper)
 
-Result(ContentTyper)
+返回(ContentTyper)
 
-Description: return the parent of the content
+说明: 返回内容的父节点
 ```
 {% raw %}{%set parent = dm.parent( content ) %}{% endraw %}
 ```
 
 #### dm.children
-Parameter: 
 
-content ContentTyper
-
-contentType string
-
-sortBy string
 
 ***TBD***
 
@@ -66,11 +59,11 @@ Return: list of content or empty slice of ContentTyper if it has nothing
 ### 其它
 
 #### dm.nice_url
-Parameter: content ContentTyper
+参数: ContentTyper
 
-Return: string
+返回: string
 
-Description: get nice url of a content, including site path/'prefix'
+描述: 得到内容的nice url
 
 ```
 {% raw %}{{dm.nice_url( content ) }}{% endraw %}
@@ -78,11 +71,11 @@ Description: get nice url of a content, including site path/'prefix'
 
 
 #### dm.root
-Parameter: string url
+参数: string url
 
-Return: string
+返回: string
 
-Description: add site path as prefix to the url. If it's '/' the last / will be removed.
+描述: 添加前缀, 如果是 '/', 最后的/将被忽略.
 
 ```
 {% raw %}{{dm.root( 'mypage/profile' ) }}{% endraw %}
