@@ -30,7 +30,7 @@ condition := db.Cond("id", ids).Cond("l.depth", 2).Cond("author", 1).Sortby("mod
 
 ### 查询一个内容
 
-| Function        | Description       
+| 函数        | 描述       
 |:-------------|:---------------------|
 | [FetchByID](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#FetchByID)       |  通过id(location id)查询一个内容  |
 | [FetchByCID](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#FetchByCID)     |  通过内容id查询一个内容  |
@@ -41,7 +41,7 @@ condition := db.Cond("id", ids).Cond("l.depth", 2).Cond("author", 1).Sortby("mod
 
 ### 查询列表
 
-| Function        | Description       
+| 函数        | 描述       
 |:-------------|:---------------------|
 | [SubList](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#SubList)       |  查询子内容列表, 考虑权限  |
 | [ListWithUser](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#ListWithUser)  | 查询子内容列表, 考虑权限 |
@@ -50,13 +50,13 @@ condition := db.Cond("id", ids).Cond("l.depth", 2).Cond("author", 1).Sortby("mod
 
 ### 查询子树
 
-| Function        | Description       
+| 函数        | 描述       
 |:-------------|:---------------------|
 | [SubTree](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#SubTree)        |  查询子树  |
 
 ### 查询用户角色
 
-| Function        | Description       
+| 函数        | 描述       
 |:-------------|:---------------------|
 | UserRole  |  查询用户角色 |
 
@@ -65,7 +65,7 @@ condition := db.Cond("id", ids).Cond("l.depth", 2).Cond("author", 1).Sortby("mod
 
 **操作内容**
 
-| Function        | Description       
+| 函数        | 描述       
 |:-------------|:---------------------|
 | [Create](https://pkg.go.dev/github.com/digimakergo/digimaker/core/handler#ContentHandler.Create)        |  创建内容 |
 | [Update](https://pkg.go.dev/github.com/digimakergo/digimaker/core/handler#ContentHandler.Update)        |  更新内容 |
@@ -77,7 +77,7 @@ condition := db.Cond("id", ids).Cond("l.depth", 2).Cond("author", 1).Sortby("mod
 
 **用户**
 
-| Function        | Description       
+| 函数        | 描述       
 |:-------------|:---------------------|
 | [CanLogin](https://pkg.go.dev/github.com/digimakergo/digimaker/core/handler#CanLogin)        |  查看用户是否能登陆 |
 | [Enable](https://pkg.go.dev/github.com/digimakergo/digimaker/core/handler#Enable)        |  启用/禁用用户 |
@@ -85,7 +85,7 @@ condition := db.Cond("id", ids).Cond("l.depth", 2).Cond("author", 1).Sortby("mod
 ## 权限
 包 core/permission
 
-| Function        | Description       
+| 函数        | 描述       
 |:-------------|:---------------------|
 | [HasAccessTo](https://pkg.go.dev/github.com/digimakergo/digimaker/core/permission#HasAccessTo)        | 查看一个用户是否有某个操作的权限|
 | [CanRead](https://pkg.go.dev/github.com/digimakergo/digimaker/core/permission#CanRead)        |  查看一个用户可读取某个内容 |
@@ -130,7 +130,7 @@ db.Cond("id", []int{1, 3}).Cond("author", 1)
 
 [点击这里查看典型的条件例子](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#example-Cond)
 
-| Function        | Description       
+| 函数        | 描述       
 |:-------------|:---------------------|
 | [Cond](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Cond)        |  创建条件 |
 | [EmptyCond](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#EmptyCond)        |  创建空条件 |
@@ -150,7 +150,7 @@ db.Cond("id", []int{1, 3}).Cond("author", 1)
 
 如果你查询一般表, 推荐使用`BindEntity`. 你可以把结果绑定到struct或者匿名结构(anonymous struct). 除此之外, 还可以用 `db.Datamap`/`DatamapList`, 它们可以直接返回一个表, 而不需要创建结构. 点击下面的 `BindEntity` 链接查看更多例子
 
-| Function        | Description       
+| 函数        | 描述       
 |:-------------|:---------------------|
 | [BindContent](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#BindContent)        |  根据条件绑定到内容变量 |
 | [CountContent](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#CountContent)        |  根据条件内容计数 |
@@ -162,7 +162,7 @@ db.Cond("id", []int{1, 3}).Cond("author", 1)
 ### 数据库层面的操作
 以下是底层的数据操作. 内容操作建议通过内容的api进行(core/handler), 内容的api包含了验证, 权限, 关系, 缓存更新, 版本等.
 
-| Function        | Description       
+| 函数        | 描述       
 |:-------------|:---------------------|
 | [Insert](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Insert)        |  插入记录 |
 | [Update](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Update)        |  更新记录 |
