@@ -1,7 +1,7 @@
 ---
 layout: page
 title: dm.yaml
-parent: References
+parent: 参考
 permalink: /references/dm
 nav_order: 40
 ---
