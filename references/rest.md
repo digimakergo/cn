@@ -1,7 +1,7 @@
 ---
 layout: page
 title: REST
-parent: References
+parent: 参考
 permalink: /references/rest
 nav_order: 15
 has_doc: true
