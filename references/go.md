@@ -32,33 +32,33 @@ condition := db.Cond("id", ids).Cond("l.depth", 2).Cond("author", 1).Sortby("mod
 
 | Function        | Description       
 |:-------------|:---------------------|
-| [FetchByID](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#FetchByID)       |  Fetch a content by id  |
-| [FetchByCID](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#FetchByCID)     |  Fetch a content by content id  |
-| [Fetch](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#Fetch)           |  Fetch a content by condition  |
-| [FetchByUID](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#FetchByUID)     |  Fetch a content by unique id  |
-| [FetchByCUID](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#FetchByCUID)   |  Fetch a content by content unique id  |
+| [FetchByID](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#FetchByID)       |  通过id(location id)查询一个内容  |
+| [FetchByCID](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#FetchByCID)     |  通过内容id查询一个内容  |
+| [Fetch](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#Fetch)           |   通过条件查询一个内容  |
+| [FetchByUID](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#FetchByUID)     |  通过location唯一标识符查询一个内容  |
+| [FetchByCUID](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#FetchByCUID)   |  通过内容唯一标识符查询一个内容  |
 
 
 ### 查询列表
 
 | Function        | Description       
 |:-------------|:---------------------|
-| [SubList](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#SubList)       |  Fetch content list under a content, with permission considered  |
-| [ListWithUser](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#ListWithUser)  |  Fetch content list with permission considered |
-| [Children](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#Children)      |  Fetch children(direct children) with permission considered  |
-| [List](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#List)     |  Fetch list by conditions(without permission considered)  |
+| [SubList](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#SubList)       |  查询子内容列表, 考虑权限  |
+| [ListWithUser](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#ListWithUser)  | 查询子内容列表, 考虑权限 |
+| [Children](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#Children)      |  查询直接子内容列表(只有一层),考虑权限  |
+| [List](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#List)     |  查询列表, 不考虑权限  |
 
 ### 查询子树
 
 | Function        | Description       
 |:-------------|:---------------------|
-| [SubTree](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#SubTree)        |  Fetch sub tree of a content  |
+| [SubTree](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#SubTree)        |  查询子树  |
 
 ### 查询用户角色
 
 | Function        | Description       
 |:-------------|:---------------------|
-| UserRole  |  Fetch users, roles based on condition |
+| UserRole  |  查询用户角色 |
 
 ## 操作内容
 包core/handler
@@ -67,20 +67,20 @@ condition := db.Cond("id", ids).Cond("l.depth", 2).Cond("author", 1).Sortby("mod
 
 | Function        | Description       
 |:-------------|:---------------------|
-| [Create](https://pkg.go.dev/github.com/digimakergo/digimaker/core/handler#ContentHandler.Create)        |  Create content |
-| [Update](https://pkg.go.dev/github.com/digimakergo/digimaker/core/handler#ContentHandler.Update)        |  Update a content |
-| [Move](https://pkg.go.dev/github.com/digimakergo/digimaker/core/handler#ContentHandler.Move)        |  Move a content location |
-| [DeleteByID](https://pkg.go.dev/github.com/digimakergo/digimaker/core/handler#ContentHandler.DeleteByID)        |  Delete a content by location id |
-| [DeleteByCID](https://pkg.go.dev/github.com/digimakergo/digimaker/core/handler#ContentHandler.DeleteByCID)        |  Delete a content by content id |
-| [DeleteByContent](https://pkg.go.dev/github.com/digimakergo/digimaker/core/handler#ContentHandler.DeleteByContent)        |  Delete a content |
+| [Create](https://pkg.go.dev/github.com/digimakergo/digimaker/core/handler#ContentHandler.Create)        |  创建内容 |
+| [Update](https://pkg.go.dev/github.com/digimakergo/digimaker/core/handler#ContentHandler.Update)        |  更新内容 |
+| [Move](https://pkg.go.dev/github.com/digimakergo/digimaker/core/handler#ContentHandler.Move)        |  移动内容 |
+| [DeleteByID](https://pkg.go.dev/github.com/digimakergo/digimaker/core/handler#ContentHandler.DeleteByID)        |  根据id删除内容 |
+| [DeleteByCID](https://pkg.go.dev/github.com/digimakergo/digimaker/core/handler#ContentHandler.DeleteByCID)        |  根据内容id删除内容 |
+| [DeleteByContent](https://pkg.go.dev/github.com/digimakergo/digimaker/core/handler#ContentHandler.DeleteByContent)        | 删除一个已经给的内容 |
 
 
 **用户**
 
 | Function        | Description       
 |:-------------|:---------------------|
-| [CanLogin](https://pkg.go.dev/github.com/digimakergo/digimaker/core/handler#CanLogin)        |  Check if a user can login or not |
-| [Enable](https://pkg.go.dev/github.com/digimakergo/digimaker/core/handler#Enable)        |  Enable/Disable a user |
+| [CanLogin](https://pkg.go.dev/github.com/digimakergo/digimaker/core/handler#CanLogin)        |  查看用户是否能登陆 |
+| [Enable](https://pkg.go.dev/github.com/digimakergo/digimaker/core/handler#Enable)        |  启用/禁用用户 |
 
 ## 权限
 包 core/permission
@@ -104,13 +104,14 @@ condition := db.Cond("id", ids).Cond("l.depth", 2).Cond("author", 1).Sortby("mod
 
 ### 条件
 
-A condition includes information of field, operator and value(eg. "id > ", 10). Operator can be ignored if it's '=' or 'in'. Typical values are like 1(int), "hello"(string), or int/string slices(in will be used when querying), or datetime. So the value should be a baisc types or struct implementing  [database.sql.driver.Valuer](https://golang.org/pkg/database/sql/driver/#Valuer).
+一个条件包含如下信息: 属性, 操作, 值(例如. "id > ", 10). 操作 '=', 'in'可忽略. 值可以是基本数据类型, 也可以是struct, 但需要实现[database.sql.driver.Valuer](https://golang.org/pkg/database/sql/driver/#Valuer)接口.
 
-Supported operators: `">", ">=", "<", "==", "<=", "!=", "=", "in", "like"`. 
 
-*Note: "==" is for join between 2 targets.*
+目前支持的操作: `">", ">=", "<", "==", "<=", "!=", "=", "in", "like"`. 
 
-It uses object-method style to build logical conditions.
+*注: "==" 用于连接查询.*
+
+多个条件时使用面向方法的使用风格:
 
 ```go
 //Below 2 are the same. Note: when using 'in/like' there should be a space before the operator
