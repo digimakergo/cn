@@ -22,7 +22,7 @@ nav_order: 0
  - [用户登陆机制](tutorial/)
 
 
-### [API](references/)
+### [API接口](references/)
  - 模型: [模板](references/template)
  - 客户端/Rest API: [Rest API](references/rest), [客户端react库digimaker-ui](references/digimaker-ui)
  - 服务端: [Go API](references/go)
