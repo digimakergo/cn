@@ -6,36 +6,29 @@ nav_order: 0
 ---
 
 
-
-A demo project of digimaker CMF, including a minimal website, web app and editorial backend setup.
-
-You can just clone this project and do some configuration and it can be your initialized project.
-
-For full documentation and references, please visit [https://digimaker.org/doc](https://digimaker.org/doc)
-
-Run the demo
+运行demo
 -------
 
 #### 系统需求:
 - Go version >= 1.2(recommand >= 1.3)
-- Mysql database(only support mysql for now)
+- Mysql database(其它数据库正在进行中)
 - npm(dev only)
 
-#### 前台
+#### 前端
 ```sh
- //clone it.
+ //clone
  git clone https://github.com/digimakergo/dmdemo.git
 
- //import database
+ //导入数据
  //remember to change configs/dm.yaml's database connection.
  mysql -u {username} -p {database} < data/dmdemo.sql
 
- //start server
+ //启动服务器
  dmapp=. go run cmd/main.go
 ```
   View frontend: http://localhost:9200
 
-Build frontend webapp
+Build前台web app
 
 ```sh
    cd web/app
@@ -43,20 +36,20 @@ Build frontend webapp
    npm run build
    (or just "npm start" and visit http://localhost:3000)
 ```
-  View frontend webapp: http://localhost:9200/mypage
+  访问: http://localhost:9200/mypage
 
-  (login with member/digimaker)
+  (登陆信息: `member/digimaker`)
 
 
  #### 后端
-  Suggest to clone eui into web/eui, see project structure in the bottom
+  建议把eui放在dmdemo/web下, 详见本文章底端的说明
   ```sh
    git clone https://github.com/digimakergo/eui.git
    cd eui
    npm install
    npm start
    ```
-View backend: http://localhost:3000 and Login with `admin/Digimaker`
+查看后台: http://localhost:3000 登陆信息: `admin/Digimaker`
 
 
 开发
