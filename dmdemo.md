@@ -69,9 +69,9 @@ Example:
 
 ### Web应用
 
-- [Photos.tsx](web/app/src/Photos.tsx) 演示了如何通过res api查询, 显示内容(图片)
-- [Profile.tsx](web/app/src/Profile.tsx) 演示了如何通过digimaker-ui的api显示和编辑内容(用户)
-- [Login.tsx](web/app/src/Login.tsx) 演示了如何用认证的api来登陆
+- [Photos.tsx](https://github.com/digimakergo/dmdemo/tree/master/web/app/src/Photos.tsx) 演示了如何通过res api查询, 显示内容(图片)
+- [Profile.tsx](https://github.com/digimakergo/dmdemo/tree/master/web/app/src/Profile.tsx) 演示了如何通过digimaker-ui的api显示和编辑内容(用户)
+- [Login.tsx](https://github.com/digimakergo/dmdemo/tree/master/web/app/src/Login.tsx) 演示了如何用认证的api来登陆
 
 rest api: [https://digimaker.org/doc/references/rest](https://digimaker.org/doc/references/rest)
 
