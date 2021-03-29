@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Go api
+title: 服务端Go
 parent: 参考
 permalink: /references/go
 nav_order: 20
