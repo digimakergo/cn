@@ -128,7 +128,7 @@ db.Cond("id", []int{1, 3})
 db.Cond("id", []int{1, 3}).Cond("author", 1)
 ```
 
-[Check here to see typical condition examples.](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#example-Cond)
+[点击这里查看典型的条件例子](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#example-Cond)
 
 | Function        | Description       
 |:-------------|:---------------------|
@@ -145,11 +145,10 @@ db.Cond("id", []int{1, 3}).Cond("author", 1)
 | [WithCount](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Condition.WithCount)   |  Always include count in result regarless limit |
 
 ### 数据库层面的查询
-There are 2 types of entities: content entities and normal entities. A content entity can be a combination from different tables. A typical normal entity is from a table.
 
-Most of content related query can be done via apis in [core/query](#package-corequery).
+有两种实体(entity): 内容实体和一般实体. 一个内容实体可能来自于多个数据表, 但一个一般实体基本上来自一于一个表.
 
-If you want to fetch normal table data, `BindEntity` is the way to go. You can create a struct or anonymous struct to bind into. There is also a `db.Datamap` and `DatamapList` which can be used for binding entities to a maplist or map. Check `BindEntity` link in below table to see examples.
+如果你查询一般表, 推荐使用`BindEntity`. 你可以把结果绑定到struct或者匿名结构(anonymous struct). 除此之外, 还可以用 `db.Datamap`/`DatamapList`, 它们可以直接返回一个表, 而不需要创建结构. 点击下面的 `BindEntity` 链接查看更多例子
 
 | Function        | Description       
 |:-------------|:---------------------|
@@ -161,7 +160,7 @@ If you want to fetch normal table data, `BindEntity` is the way to go. You can c
 | [BindEntityWithQuery](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#BindEntityWithQuery)        |  Bind conentent(s) with a query|
 
 ### 数据库层面的操作
-Below are low level data operations. Content manipulation normally is done via apis in core/handler since they includes validation, permission check, relation cache update, versioning, etc.
+以下是底层的数据操作. 内容操作建议通过内容的api进行(core/handler), 内容的api包含了验证, 权限, 关系, 缓存更新, 版本等.
 
 | Function        | Description       
 |:-------------|:---------------------|
@@ -173,7 +172,7 @@ Below are low level data operations. Content manipulation normally is done via a
 
 
 ## 工具
-package core/util
+包 core/util
 
 ## 日志 & 调式
-package core/log
+包 core/log
