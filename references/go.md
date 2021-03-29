@@ -132,17 +132,17 @@ db.Cond("id", []int{1, 3}).Cond("author", 1)
 
 | Function        | Description       
 |:-------------|:---------------------|
-| [Cond](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Cond)        |  Create a condition |
-| [EmptyCond](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#EmptyCond)        |  Empty condition |
-| [TrueCond](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#TrueCond)        |  Always true |
-| [FalseCond](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#FalseCond)        |  Always false |
+| [Cond](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Cond)        |  创建条件 |
+| [EmptyCond](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#EmptyCond)        |  创建空条件 |
+| [TrueCond](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#TrueCond)        |  创建true条件 |
+| [FalseCond](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#FalseCond)        |  创建false条件 |
 | **Condition struct**| |
-| [Cond](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Condition.Cond)     |  Same as And&Cond combined |
-| [And](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Condition.And)   | Same as And with itself as first parameter |
-| [Or](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Condition.Or)    | Same as Or with itself as first parameter |
-| [Sortby](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Condition.Sortby)        |  Sort by |
-| [Limit](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Condition.Limit)        |  Limit |
-| [WithCount](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Condition.WithCount)   |  Always include count in result regarless limit |
+| [Cond](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Condition.Cond)     |  与And&Cond相同 |
+| [And](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Condition.And)   |  相当于And, 把自己作为第一参数 |
+| [Or](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Condition.Or)    | 相当于Or, 把自己作为第一参数 |
+| [Sortby](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Condition.Sortby)        |  排序 |
+| [Limit](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Condition.Limit)        |  用于分页 |
+| [WithCount](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Condition.WithCount)   |  总包含计数信息, 不管有没有分页 |
 
 ### 数据库层面的查询
 
@@ -152,11 +152,11 @@ db.Cond("id", []int{1, 3}).Cond("author", 1)
 
 | Function        | Description       
 |:-------------|:---------------------|
-| [BindContent](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#BindContent)        |  Bind content(s) with a condition |
-| [CountContent](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#CountContent)        |  Count content(s) with a condition |
-| [BindEntity](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#BindEntity)        |  Bind entity(s) with a condition |
-| [Count](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Count)        |   Count entity with a condition |
-| [BindContentWithQuery](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#BindContentWithQuery)        |  Bind conentent(s) with a query|
+| [BindContent](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#BindContent)        |  根据条件绑定到内容变量 |
+| [CountContent](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#CountContent)        |  根据条件内容计数 |
+| [BindEntity](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#BindEntity)        | 根据条件绑定到实体变量 |
+| [Count](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Count)        |   根据条件实体计数 |
+| [BindContentWithQuery](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#BindContentWithQuery)        | 根据查询(Query)绑定到内容变量|
 | [BindEntityWithQuery](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#BindEntityWithQuery)        |  Bind conentent(s) with a query|
 
 ### 数据库层面的操作
@@ -164,9 +164,9 @@ db.Cond("id", []int{1, 3}).Cond("author", 1)
 
 | Function        | Description       
 |:-------------|:---------------------|
-| [Insert](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Insert)        |  Insert a record |
-| [Update](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Update)        |  Update a record |
-| [Delete](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Delete)        |  Delete a record |
+| [Insert](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Insert)        |  插入记录 |
+| [Update](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Update)        |  更新记录 |
+| [Delete](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Delete)        |  删除记录 |
 
 
 
