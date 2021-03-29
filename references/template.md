@@ -16,19 +16,19 @@ has_toc: true
 {:toc}
 </details>
 
-## Template basis
+## 模板初步
 
-We are using [Pongo2](https://github.com/flosch/pongo2) as template engine, which uses Python Django like style. Check their documentation to see examples:
- - Simple example: [https://github.com/flosch/pongo2#first-impression-of-a-template](https://github.com/flosch/pongo2#first-impression-of-a-template)
- - Examples as test cases: [https://github.com/flosch/pongo2/tree/master/template_tests](https://github.com/flosch/pongo2/tree/master/template_tests)
+我们使用 [Pongo2](https://github.com/flosch/pongo2) 作为模板引擎, 有些类似于Python Django的语法风格. 请查看Pongo2的文档得到基本用法:
+ - 基本例子: [https://github.com/flosch/pongo2#first-impression-of-a-template](https://github.com/flosch/pongo2#first-impression-of-a-template)
+ - 更多例子(以测试用例的方式): [https://github.com/flosch/pongo2/tree/master/template_tests](https://github.com/flosch/pongo2/tree/master/template_tests)
 
 ### Filters
-Check here to see all their built in/add-on filters: [https://github.com/flosch/pongo2/blob/master/docs/filters.md](https://github.com/flosch/pongo2/blob/master/docs/filters.md)
+这里有Pongo2的默认和和扩展的filter: [https://github.com/flosch/pongo2/blob/master/docs/filters.md](https://github.com/flosch/pongo2/blob/master/docs/filters.md)
 
 
-## Functions in digimaker
+## Digimaker的模板函数
 
-### Contents
+### 内容相关
 
 #### dm.fetch_byid
 Parameter(int): id of the locaiton. 
@@ -63,7 +63,7 @@ sortBy string
 Return: list of content or empty slice of ContentTyper if it has nothing
 
 
-### MISC
+### 其它
 
 #### dm.nice_url
 Parameter: content ContentTyper
@@ -89,6 +89,6 @@ Description: add site path as prefix to the url. If it's '/' the last / will be 
 ```
 
 
-## Filters in digimaker
+## Digimaker的filter
 
 
