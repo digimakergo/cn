@@ -1,6 +1,6 @@
 ---
 layout: page
-title: References
+title: 参考
 permalink: /references/
 nav_order: 15
 has_children: true
