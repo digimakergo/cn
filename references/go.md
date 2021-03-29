@@ -114,7 +114,7 @@ condition := db.Cond("id", ids).Cond("l.depth", 2).Cond("author", 1).Sortby("mod
 多个条件时使用面向方法的使用风格:
 
 ```go
-//Below 2 are the same. Note: when using 'in/like' there should be a space before the operator
+//以下两个是一样的, 注: 当使用'in/like'时, 必须前面一个空格(如"a like")
 db.Cond("id>", ids)
 db.Cond("id >", ids)
 
