@@ -11,7 +11,7 @@ nav_order: 2
 
 **系统需求:**
 - Go version >= 1.2(推荐>= 1.3)
-- Mysql database(其它数据库正在进行中)
+- Mysql database(其它数据库的支持正在开发中)
 - npm(只需开发时用)
 
 ### 运行前台
