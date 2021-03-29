@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Editorial user interface(EUI)
+title: 后台系统(EUI)
 permalink: /eui/
 nav_order: 40
 ---
