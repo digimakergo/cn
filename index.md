@@ -10,7 +10,7 @@ nav_order: 0
 欢迎进入Digimaker CMF文档站点!
 
 ### 安装
-最简单的安装方式是克隆demo项目, 然后运行: [https://github.com/digimakergo/dmdemo](https://github.com/digimakergo/dmdemo), [中文说明](demo).
+最简单的安装方式是克隆并运行demo项目: [https://github.com/digimakergo/dmdemo](https://github.com/digimakergo/dmdemo), [中文说明](demo).
 
 
 ### 文章&教程 (正在添加)
