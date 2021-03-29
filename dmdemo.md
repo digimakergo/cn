@@ -38,7 +38,7 @@ nav_order: 2
 ```
   访问: http://localhost:9200/mypage (登陆信息: `member/digimaker`)
 
- ### 运行后台(管理员界面)
+### 运行后台(管理员界面)
  
   建议把eui放在dmdemo/web下, 详见本文章底端的说明
   ```sh
