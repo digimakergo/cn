@@ -52,33 +52,30 @@ Build前台web app
 查看后台: http://localhost:3000 登陆信息: `admin/Digimaker`
 
 
-开发
+代码开发说明
 -------
 
 ### 网站, 模板
 
-First you need to define a template override rule under [configs/template_override.yaml](https://github.com/digimakergo/dmdemo/blob/master/configs/template_override.yaml) (and template_override-dmdemo.yaml), then you can do the templating in that template file.  
-
 Example:
-- [Display a folder](https://github.com/digimakergo/dmdemo/tree/master/web/templates/demo/folder/full.html)
-- [Display frontpage](https://github.com/digimakergo/dmdemo/tree/master/web/templates/demo/folder/frontpage.html)
-- [Layout](https://github.com/digimakergo/dmdemo/tree/master/web/templates/demo/base.html)
+- [显示文件夹](https://github.com/digimakergo/dmdemo/tree/master/web/templates/demo/folder/full.html)
+- [显示首页](https://github.com/digimakergo/dmdemo/tree/master/web/templates/demo/folder/frontpage.html)
+- [布局](https://github.com/digimakergo/dmdemo/tree/master/web/templates/demo/base.html)
 
-Check docs to see all template override rules: [https://digimaker.org/doc/references/template-override](https://digimaker.org/doc/references/template-override)
+如何配置模板: [https://digimaker.org/doc/references/template-override](https://digimaker.org/cn/references/template-override)
 
-Check docs to see all references: [https://digimaker.org/doc/references/template](https://digimaker.org/doc/references/template)
+模板文档: [https://digimaker.org/doc/references/template](https://digimaker.org/cn/references/template)
 
 
 ### Web应用
-See [web/app](web/app) for examples.
 
-- [Photos.tsx](web/app/src/Photos.tsx) Shows how to query images, add content(image) using rest api
-- [Profile.tsx](web/app/src/Profile.tsx) Shows how to show/edit content(user) using components in digimaker-ui
-- [Login.tsx](web/app/src/Login.tsx) Shows how to get authorization token using rest api
+- [Photos.tsx](web/app/src/Photos.tsx) 演示了如何通过res api查询, 显示内容(图片)
+- [Profile.tsx](web/app/src/Profile.tsx) 演示了如何通过digimaker-ui的api显示和编辑内容(用户)
+- [Login.tsx](web/app/src/Login.tsx) 演示了如何用认证的api来登陆
 
-Check docs to see rest api: [https://digimaker.org/doc/references/rest](https://digimaker.org/doc/references/rest)
+rest api: [https://digimaker.org/doc/references/rest](https://digimaker.org/doc/references/rest)
 
-Check docs to see full react components: [https://digimaker.org/doc/references/digimaker-ui](https://digimaker.org/doc/references/digimaker-ui)
+react组件digimaker-ui: [https://digimaker.org/doc/references/digimaker-ui](https://digimaker.org/doc/references/digimaker-ui)
 
 
 ### 权限配置
@@ -109,9 +106,9 @@ Example on policies.json:
 Check docs to see policies configuration: [https://digimaker.org/doc/references/policies](https://digimaker.org/doc/references/policies)
 
 ### 内容模型
-Digimaker defines content model in file and generates entities based on the definition. Developers use those entities to manipulate content similar to ORM.
+Digimaker首先定义内容模型, 然后根据定义的模型生成类似于ORM里的实体(entity).
 
-[contenttype.json](configs/contenttype.json) defines content model. If there is changes on contenttype.json, run below so it can generate entities under entity folder
+内容模型定义在[contenttype.json](configs/contenttype.json). 如果模型有更新, 可以通过运行如下命令来生成实体.
 
 ```
 cd dmdemo
