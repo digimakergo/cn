@@ -36,12 +36,10 @@ Build前台web app
    npm run build
    (or just "npm start" and visit http://localhost:3000)
 ```
-  访问: http://localhost:9200/mypage
-
-  (登陆信息: `member/digimaker`)
-
+  访问: http://localhost:9200/mypage (登陆信息: `member/digimaker`)
 
  ### 后台
+ 
   建议把eui放在dmdemo/web下, 详见本文章底端的说明
   ```sh
    git clone https://github.com/digimakergo/eui.git
