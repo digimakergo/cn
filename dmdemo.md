@@ -79,13 +79,13 @@ react组件digimaker-ui: [https://digimaker.org/doc/references/digimaker-ui](htt
 
 
 ### 权限配置
-The permission policies is defined under [policies.json](configs/policies.json), and then connect to role and user in the content. policies.json defines permission like
- - fetching  based on content type, parent,etc
- - operations(eg. create content, update, delete) based on content type, parent, author(self)
- - updated fields when updating - attribute level permission
- - non-content operation like login, left menu of eui, etc
+所有权限的策略信息都配置在[policies.json](configs/policies.json), 然后策略会通过后台界面关联到角色, 然后到用户上. policies.json可定义如下权限 
+ - 查询哪些类型的内容, 哪个节点下的, 作者是谁等
+ - 内容操作(创建/更新/删除) : 哪些类型, 在哪个节点下, 作者是否是自己等
+ - 更新哪些属性 - 属性级别的权限
+ - 非内容相关的权限, 如登陆, 后台界面的左栏菜单等.
 
-Example on policies.json:
+以下是个例子:
 ```json
   {
     "operation": ["content/update", "content/read"],
@@ -103,7 +103,7 @@ Example on policies.json:
   }
 ```
 
-Check docs to see policies configuration: [https://digimaker.org/doc/references/policies](https://digimaker.org/doc/references/policies)
+policies配置文档: [https://digimaker.org/doc/references/policies](https://digimaker.org/doc/references/policies)
 
 ### 内容模型
 Digimaker首先定义内容模型, 然后根据定义的模型生成类似于ORM里的实体(entity).
@@ -115,7 +115,7 @@ cd dmdemo
 dmapp=. go run /Users/xc/go/src/github.com/digimakergo/digimaker/codegen/contenttypes/gen.go
 ```
 
-Default output example after run
+默认会输出如下信息
 
 ```
 Generating content entities for /Users/xc/go/src/github.com/digimakergo/dmdemo
