@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Go api
-parent: References
+parent: 参考
 permalink: /references/go
 nav_order: 20
 has_toc: true
