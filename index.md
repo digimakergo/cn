@@ -23,7 +23,7 @@ nav_order: 0
 
 
 ### [API接口](references/)
- - 模型: [模板](references/template)
+ - 模板: [模板](references/template)
  - 客户端/Rest API: [Rest API](references/rest), [客户端react库digimaker-ui](references/digimaker-ui)
  - 服务端: [Go API](references/go)
  - 配置文件: [dm.yaml](references/dm), [contenttype.json](references/contenttype), [template_override.yaml](references/template-override), [policies.yaml](references/policies)
