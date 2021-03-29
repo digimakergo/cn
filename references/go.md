@@ -87,16 +87,16 @@ condition := db.Cond("id", ids).Cond("l.depth", 2).Cond("author", 1).Sortby("mod
 
 | Function        | Description       
 |:-------------|:---------------------|
-| [HasAccessTo](https://pkg.go.dev/github.com/digimakergo/digimaker/core/permission#HasAccessTo)        |  Check if a user can accces to a operation |
-| [CanRead](https://pkg.go.dev/github.com/digimakergo/digimaker/core/permission#CanRead)        |  Check if a user can read a content |
-| [CanUpdate](https://pkg.go.dev/github.com/digimakergo/digimaker/core/permission#CanUpdate)        |  Check if a user can update a content |
-| [CanDelete](https://pkg.go.dev/github.com/digimakergo/digimaker/core/permission#CanDelete)        |  Check if a user can delete a content |
+| [HasAccessTo](https://pkg.go.dev/github.com/digimakergo/digimaker/core/permission#HasAccessTo)        | 查看一个用户是否有某个操作的权限|
+| [CanRead](https://pkg.go.dev/github.com/digimakergo/digimaker/core/permission#CanRead)        |  查看一个用户可读取某个内容 |
+| [CanUpdate](https://pkg.go.dev/github.com/digimakergo/digimaker/core/permission#CanUpdate)        |  看一个用户可更新某个内容 |
+| [CanDelete](https://pkg.go.dev/github.com/digimakergo/digimaker/core/permission#CanDelete)        |  看一个用户可删除某个内容 |
 | **Fetch policies and access**        |   |
-| [GetUserAccess](https://pkg.go.dev/github.com/digimakergo/digimaker/core/permission#GetUserAccess)        |  Get user limit list|
-| [GetUserPolicies](https://pkg.go.dev/github.com/digimakergo/digimaker/core/permission#GetUserPolicies)        |  Get user polices|
+| [GetUserAccess](https://pkg.go.dev/github.com/digimakergo/digimaker/core/permission#GetUserAccess)        |  取得某个用户的限制(limit)列表|
+| [GetUserPolicies](https://pkg.go.dev/github.com/digimakergo/digimaker/core/permission#GetUserPolicies)        |  取得用户的策略|
 | **Operations**| |
-| [AssignToUser](https://pkg.go.dev/github.com/digimakergo/digimaker/core/permission#AssignToUser)        |  Assign a role to a user|
-| [RemoveAssignment](https://pkg.go.dev/github.com/digimakergo/digimaker/core/permission#RemoveAssignment)        |  Remove the assignment of user role|
+| [AssignToUser](https://pkg.go.dev/github.com/digimakergo/digimaker/core/permission#AssignToUser)        |  把角色分配到用户上|
+| [RemoveAssignment](https://pkg.go.dev/github.com/digimakergo/digimaker/core/permission#RemoveAssignment)        |  把角色从某个用户中移除|
 
 ## 数据库
 包 core/db
