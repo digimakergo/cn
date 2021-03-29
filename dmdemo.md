@@ -9,12 +9,12 @@ nav_order: 2
 运行demo
 -------
 
-#### 系统需求:
-- Go version >= 1.2(recommand >= 1.3)
+**系统需求:**
+- Go version >= 1.2(推荐>= 1.3)
 - Mysql database(其它数据库正在进行中)
-- npm(dev only)
+- npm(只需开发时用)
 
-#### 前端
+### 运行前台
 ```sh
  //clone
  git clone https://github.com/digimakergo/dmdemo.git
@@ -41,7 +41,7 @@ Build前台web app
   (登陆信息: `member/digimaker`)
 
 
- #### 后端
+ ### 后台
   建议把eui放在dmdemo/web下, 详见本文章底端的说明
   ```sh
    git clone https://github.com/digimakergo/eui.git
