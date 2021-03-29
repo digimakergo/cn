@@ -7,28 +7,28 @@ nav_order: 20
 has_toc: true
 ---
 
-Below is a overview Go APIs, see [auto generated go documentation](https://pkg.go.dev/github.com/digimakergo/digimaker#section-documentation)
+以下是Go API预览, 查看[自动生成的api文档](https://pkg.go.dev/github.com/digimakergo/digimaker#section-documentation)
 
 <details open markdown="block">
   <summary>
-    Table of contents
+    内容列表
   </summary>
   {: .text-delta }
 1. TOC
 {:toc}
 </details>
 
-## Fetch contents
-package core/query
+## 获取内容
+包 core/query
 
-Note: in all queries, the condition syntax as below is used
+注: 所有的查询都会使用像下面的条件语法
 
 ```go
 ids := []int{3, 4, 5, 7, 9, 10}
 condition := db.Cond("id", ids).Cond("l.depth", 2).Cond("author", 1).Sortby("modified desc").Limit(0, 2)
 ```
 
-### Fetch a content
+### 查询一个内容
 
 | Function        | Description       
 |:-------------|:---------------------|
@@ -39,7 +39,7 @@ condition := db.Cond("id", ids).Cond("l.depth", 2).Cond("author", 1).Sortby("mod
 | [FetchByCUID](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#FetchByCUID)   |  Fetch a content by content unique id  |
 
 
-### Fetch List
+### 查询列表
 
 | Function        | Description       
 |:-------------|:---------------------|
@@ -48,22 +48,22 @@ condition := db.Cond("id", ids).Cond("l.depth", 2).Cond("author", 1).Sortby("mod
 | [Children](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#Children)      |  Fetch children(direct children) with permission considered  |
 | [List](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#List)     |  Fetch list by conditions(without permission considered)  |
 
-### Fetch subtree
+### 查询子树
 
 | Function        | Description       
 |:-------------|:---------------------|
 | [SubTree](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#SubTree)        |  Fetch sub tree of a content  |
 
-### Fetch user/role
+### 查询用户角色
 
 | Function        | Description       
 |:-------------|:---------------------|
 | UserRole  |  Fetch users, roles based on condition |
 
-## Operate contents
-package core/handler
+## 操作内容
+包core/handler
 
-**Manipulate content**
+**操作内容**
 
 | Function        | Description       
 |:-------------|:---------------------|
@@ -75,7 +75,7 @@ package core/handler
 | [DeleteByContent](https://pkg.go.dev/github.com/digimakergo/digimaker/core/handler#ContentHandler.DeleteByContent)        |  Delete a content |
 
 
-**User**
+**用户**
 
 | Function        | Description       
 |:-------------|:---------------------|
@@ -83,7 +83,7 @@ package core/handler
 | [Enable](https://pkg.go.dev/github.com/digimakergo/digimaker/core/handler#Enable)        |  Enable/Disable a user |
 
 ## Permission
-package core/permission
+包 core/permission
 
 | Function        | Description       
 |:-------------|:---------------------|
@@ -98,11 +98,11 @@ package core/permission
 | [AssignToUser](https://pkg.go.dev/github.com/digimakergo/digimaker/core/permission#AssignToUser)        |  Assign a role to a user|
 | [RemoveAssignment](https://pkg.go.dev/github.com/digimakergo/digimaker/core/permission#RemoveAssignment)        |  Remove the assignment of user role|
 
-## Database
+## 数据库
 package core/db
 
 
-### Conditions
+### 条件
 
 A condition includes information of field, operator and value(eg. "id > ", 10). Operator can be ignored if it's '=' or 'in'. Typical values are like 1(int), "hello"(string), or int/string slices(in will be used when querying), or datetime. So the value should be a baisc types or struct implementing  [database.sql.driver.Valuer](https://golang.org/pkg/database/sql/driver/#Valuer).
 
@@ -143,7 +143,7 @@ db.Cond("id", []int{1, 3}).Cond("author", 1)
 | [Limit](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Condition.Limit)        |  Limit |
 | [WithCount](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Condition.WithCount)   |  Always include count in result regarless limit |
 
-### Queries
+### 数据库层面的查询
 There are 2 types of entities: content entities and normal entities. A content entity can be a combination from different tables. A typical normal entity is from a table.
 
 Most of content related query can be done via apis in [core/query](#package-corequery).
@@ -171,8 +171,8 @@ Below are low level data operations. Content manipulation normally is done via a
 
 
 
-## Utilities
+## 工具
 package core/util
 
-## Log & Debug
+## 日志 & 调式
 package core/log
