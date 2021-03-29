@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 模板
-parent: References
+parent: 参考
 permalink: /references/template
 nav_order: 9
 has_toc: true
