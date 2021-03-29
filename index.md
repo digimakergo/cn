@@ -7,7 +7,7 @@ title: 首页
 nav_order: 0
 ---
 
-欢迎进入Digimaker CMF文档站点!
+欢迎进入Digimaker CMF(内容管理框架)文档站点!
 
 ### 安装
 最简单的安装方式是克隆并运行demo项目: [https://github.com/digimakergo/dmdemo](https://github.com/digimakergo/dmdemo), [中文说明](demo).
