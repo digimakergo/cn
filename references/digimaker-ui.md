@@ -1,7 +1,7 @@
 ---
 layout: page
 title: digimaker-ui
-parent: References
+parent: 参考
 permalink: /references/digimaker-ui
 nav_order: 30
 ---
