@@ -40,7 +40,7 @@ plugins:
 color_scheme: digimaker
 
 aux_links:
-  "Github page":
+  "Github项目":
     - "//github.com/digimakergo/digimaker"
   "EN":
     - "http://digimaker.org/doc"
