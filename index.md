@@ -3,42 +3,42 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-title: Home
+title: 首页
 nav_order: 0
 ---
 
-Welcome to Digimaker CMF documentation!
+欢迎进入Digimaker CMF文档站点!
 
-### Installation
-The simpliest way to install is to get sample code and run: [https://github.com/digimakergo/dmdemo](https://github.com/digimakergo/dmdemo) . The sample project readme has explained code structure and basic apis.
-
-
-### Tutorials & articles (tba)
- - [How to develop website](tutorial/)
- - [How to use client library(digimaker-ui) and rest api to develop web app](tutorial/)
- - [How to develop server side(extend rest api, content handler, fieldtype)](tutorial/)
- - [Content model explained & how to configure](tutorial/content-model)
- - [Online log/debug tool](tutorial/)
- - [Authorization explained](tutorial/)
+### 安装
+最简单的安装方式是克隆demo项目, 然后运行: [https://github.com/digimakergo/dmdemo](https://github.com/digimakergo/dmdemo) .
 
 
-### [References](references/)
- - Templates: [Templating](references/template)
- - Client/Rest API: [Rest API](references/rest), [Client library(digimaker-ui)](references/digimaker-ui)
- - Server side: [Go API](references/go)
- - Configuration: [dm.yaml](references/dm), [contenttype.json](references/contenttype), [template_override.yaml](references/template-override), [policies.yaml](references/policies)
+### 文章&教程 (正在添加)
+ - [如何开发网站](tutorial/)
+ - [如何使用客户端库(digimaker-ui)和rest api开发web应用](tutorial/)
+ - [如何开发服务端(扩展rest api,Content handler, fieldtype)](tutorial/)
+ - [内容模型以及如何配置](tutorial/content-model)
+ - [在线日志/调试工具](tutorial/)
+ - [用户登陆机制](tutorial/)
 
-### Backend administration(editorial user interface/eui)
-Below is a basic screenshot of eui, which is customizable in tools, display, columns, themes etc, and is extendable for more features.
+
+### [API](references/)
+ - 模型: [Templating](references/template)
+ - 客户端/Rest API: [Rest API](references/rest), [客户端react库digimaker-ui](references/digimaker-ui)
+ - 服务端: [Go API](references/go)
+ - 配置文件: [dm.yaml](references/dm), [contenttype.json](references/contenttype), [template_override.yaml](references/template-override), [policies.yaml](references/policies)
+
+### 后台管理(后台编辑界面/eui)
+如下是eui的基本界面, 界面可定制, 如工具, 显示哪些, 列表表, 主题等. 你也可以添加自定义的功能.
 
 <img src="https://raw.githubusercontent.com/digimakergo/eui/master/doc/eui-1.png" width="700px" />
 
-[Customize eui](eui/)
+[定制eui](eui/)
 
-### Roadmap
+### 路线图
 
-We are evolving so check our [roadmap](roadmap) to know our next step.
+我们正在演化, 看我们的[路线图](roadmap), 你可得到下一步的功能.
 
-### Thanks
-Special thanks to template library [Pongo2](https://github.com/flosch/pongo2) and high perforance DB library [SQL Boiler](https://github.com/volatiletech/sqlboiler). 
+### 感谢
+特别感谢模型库 [Pongo2](https://github.com/flosch/pongo2), 还有高性能数据库库 [SQL Boiler](https://github.com/volatiletech/sqlboiler). 
 
