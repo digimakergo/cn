@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Template
+title: 模板
 parent: References
 permalink: /references/template
 nav_order: 9
