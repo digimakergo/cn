@@ -50,7 +50,7 @@ Build前台web app
 查看后台: http://localhost:3000 登陆信息: `admin/Digimaker`
 
 
-代码开发说明
+代码说明
 -------
 
 ### 网站, 模板
