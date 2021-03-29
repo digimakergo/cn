@@ -1,0 +1,10 @@
+.main-header {
+  /*height: 35px;*/
+}
+
+.aux-nav .aux-nav-list-item{
+}
+
+.aux-nav .aux-nav-list-item:not(:last-child){
+  border-right: 1px solid #f0f0f0;
+}
