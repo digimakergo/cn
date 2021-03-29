@@ -1,7 +1,7 @@
 ---
 layout: page
 title: template-override.yaml
-parent: References
+parent: 参考
 permalink: /references/template-override
 nav_order: 60
 ---
