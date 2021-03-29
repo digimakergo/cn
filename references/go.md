@@ -82,7 +82,7 @@ condition := db.Cond("id", ids).Cond("l.depth", 2).Cond("author", 1).Sortby("mod
 | [CanLogin](https://pkg.go.dev/github.com/digimakergo/digimaker/core/handler#CanLogin)        |  Check if a user can login or not |
 | [Enable](https://pkg.go.dev/github.com/digimakergo/digimaker/core/handler#Enable)        |  Enable/Disable a user |
 
-## Permission
+## 权限
 包 core/permission
 
 | Function        | Description       
@@ -99,7 +99,7 @@ condition := db.Cond("id", ids).Cond("l.depth", 2).Cond("author", 1).Sortby("mod
 | [RemoveAssignment](https://pkg.go.dev/github.com/digimakergo/digimaker/core/permission#RemoveAssignment)        |  Remove the assignment of user role|
 
 ## 数据库
-package core/db
+包 core/db
 
 
 ### 条件
