@@ -40,5 +40,5 @@ nav_order: 0
 我们正在演化, 看我们的[路线图](roadmap), 你可得到下一步的功能.
 
 ### 感谢
-特别感谢模型库 [Pongo2](https://github.com/flosch/pongo2), 还有高性能数据库库 [SQL Boiler](https://github.com/volatiletech/sqlboiler). 
+特别感谢模板库 [Pongo2](https://github.com/flosch/pongo2), 还有高性能数据库库 [SQL Boiler](https://github.com/volatiletech/sqlboiler). 
 
