@@ -1,6 +1,6 @@
 ---
 layout: page
-title: REST
+title: 远程访问api
 parent: 参考
 permalink: /references/rest
 nav_order: 15
