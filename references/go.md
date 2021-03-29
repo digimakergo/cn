@@ -159,7 +159,7 @@ If you want to fetch normal table data, `BindEntity` is the way to go. You can c
 | [BindContentWithQuery](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#BindContentWithQuery)        |  Bind conentent(s) with a query|
 | [BindEntityWithQuery](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#BindEntityWithQuery)        |  Bind conentent(s) with a query|
 
-### Data operations
+### 数据库层面的操作
 Below are low level data operations. Content manipulation normally is done via apis in core/handler since they includes validation, permission check, relation cache update, versioning, etc.
 
 | Function        | Description       
