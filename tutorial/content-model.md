@@ -26,7 +26,7 @@ Digimaker CMF内容模型的设计理念是, 通过一些配置, 自动生成类
 
 ```json
  "article": {
-    "Name": "Article",
+    "Name": "文章",
     ...
     "fields": [{
         "identifier": "title",
