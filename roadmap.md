@@ -5,7 +5,7 @@ permalink: /roadmap/
 nav_order: 50
 ---
 
-# Roadmap
+# Digimaker路线图(Roadmap)
 以下是Digimaker的路线图, 我们将及时更新本文档.
 
 当前版本:
@@ -19,3 +19,5 @@ nav_order: 50
 - 支持多图片上传
 - 支持属性及的权限
 - 权限配置支持变量
+
+如有建议可直接联系我们, 进入[首页](./), 里面有联系方式.
