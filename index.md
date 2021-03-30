@@ -15,7 +15,6 @@ nav_order: 0
 最简单的安装方式是克隆并运行demo项目: [https://github.com/digimakergo/dmdemo](https://github.com/digimakergo/dmdemo), [中文说明](demo). 
 
 ### Digimaker提供哪些
-Digimaker提供
 - 一个服务端的Go库 
 - 模板语言(用于输出html)
 - rest api
