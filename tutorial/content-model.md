@@ -27,10 +27,7 @@ Digimaker CMF的设计理念是, 通过一些模型配置, 自动生成类似于
 ```json
  "article": {
     "Name": "Article",
-    "table_name": "dm_article",
-    "has_version": true,
-    "has_location": true,
-    "name_pattern": "{title}",
+    ...
     "fields": [{
         "identifier": "title",
         "type": "text",
