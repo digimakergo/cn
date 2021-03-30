@@ -15,13 +15,13 @@ nav_order: 0
 最简单的安装方式是克隆并运行demo项目: [https://github.com/digimakergo/dmdemo](https://github.com/digimakergo/dmdemo), [中文说明](demo).
 
 
-### 文章&教程 (正在添加)
- - [基本概念及如何建模](tutorial/content-model)
- - [如何开发网站](tutorial/)
- - [如何使用客户端库(digimaker-ui)和rest api开发web应用](tutorial/)
- - [如何开发服务端(扩展rest api,Content handler, fieldtype)](tutorial/)
- - [在线日志/调试工具](tutorial/)
- - [用户登陆机制](tutorial/)
+### 文章&教程
+ - [基本概念](tutorial/content-model)
+ - [如何开发网站](tutorial/) (正在添加)
+ - [如何使用客户端库(digimaker-ui)和rest api开发web应用](tutorial/)(正在添加)
+ - [如何开发服务端(扩展rest api,Content handler, fieldtype)](tutorial/)(正在添加)
+ - [在线日志/调试工具](tutorial/)(正在添加)
+ - [用户登陆机制](tutorial/)(正在添加)
 
 
 ### [API接口](references/)
