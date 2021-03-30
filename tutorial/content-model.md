@@ -59,3 +59,30 @@ Digimaker CMF的设计理念是, 通过一些模型配置, 自动生成类似于
 所以从digimaker的角度看, 内容的定义比较广义, 除了一般意义上的文章、文件夹、图片、表单等是内容外, 像考试题、答案、产品是内容. 甚至定单也是内容, 因为我们允许混合数据类型, 比如数据库的整型与digimaker的文本是可以混合使用。因此digimaker可用于大部分一般的web系统开发. 相对于一般的cms网站系统digimaker提供更灵活的内容模型, 而相对web框架来说, digimaker提供与内容相关的功能(如输入界面, 查询操作api, 权限管理, 日志调试等).
 
 
+### 配置模型
+
+模型配置文件是config/contenttype.json, 配置好文件后运行命令可生成相应的实体(entity).
+
+[模型配置文件参考文档](../references/contenttype)
+
+以下是dmdemo的例子, 每次修改contenttype.json后需要运行此命令来更新对应的enitity, 生成的entity会在entity目录下(如dmdemo/entity).
+
+```
+cd dmdemo
+dmapp=. go run /Users/xc/go/src/github.com/digimakergo/digimaker/codegen/contenttypes/gen.go
+```
+
+默认会输出如下信息
+
+```
+Generating content entities for /Users/xc/go/src/github.com/digimakergo/dmdemo
+Generating article
+Generating usergroup
+Generating role
+Generating user
+Generating image
+Generating file
+Generating folder
+Generating frontpage
+```
+
