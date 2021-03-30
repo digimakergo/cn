@@ -14,6 +14,8 @@ nav_order: 0
 ### 安装
 最简单的安装方式是克隆并运行demo项目: [中文说明](demo), [演示项目github](https://github.com/digimakergo/dmdemo). 
 
+然后你可以修改相关配置即变成一个新项目.
+
 ### Digimaker提供哪些
 - 服务端的Go库 
 - 模板语言(用于输出html)
