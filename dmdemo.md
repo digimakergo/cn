@@ -12,10 +12,10 @@ nav_order: 2
 
 **系统需求:**
 - Go version >= 1.2(推荐>= 1.3)
-- Mysql database(其它数据库的支持正在开发中)
+- Mysql(其它数据库的支持正在开发中)
 - npm(只需开发时用)
 
-### 运行前台
+### 安装, 运行
 ```sh
  //clone
  git clone https://github.com/digimakergo/dmdemo.git
@@ -23,18 +23,20 @@ nav_order: 2
  //建议运行如下命令(只用于发布前的beta版)
  go get -u github.com/digimakergo/digimaker
 
- //导入数据
- //remember to change configs/dm.yaml's database connection.
+ //建数据库并导入数据
+ //注: 同时要修改configs/dm.yaml数据库连接信息.
  mysql -u {username} -p {database} < data/dmdemo.sql
 
  //启动服务器
  dmapp=. go run cmd/main.go
 ```
-  访问网站: [http://localhost:9200](http://localhost:9200)
+
+### 访问网站
+  访问: [http://localhost:9200](http://localhost:9200)
   
   <a href="https://raw.githubusercontent.com/digimakergo/cn/master/dmdemo-site.png"><img src="https://raw.githubusercontent.com/digimakergo/cn/master/dmdemo-site.png" width="600px"/></a>
 
-前台web app
+### 访问前台web app
 
 ```sh
    cd web/app
