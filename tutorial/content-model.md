@@ -6,7 +6,7 @@ permalink: /tutorial/content-model
 nav_order: 1
 ---
 
-## 内容基本概念
+## 基本概念
 
 
 ### 设计理念
