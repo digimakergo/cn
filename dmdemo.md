@@ -69,7 +69,7 @@ nav_order: 2
 
 ### 网站, 模板
 
-Example:
+模板例子:
 - [显示文件夹](https://github.com/digimakergo/dmdemo/tree/master/web/templates/demo/folder/full.html)
 - [显示首页](https://github.com/digimakergo/dmdemo/tree/master/web/templates/demo/folder/frontpage.html)
 - [布局](https://github.com/digimakergo/dmdemo/tree/master/web/templates/demo/base.html)
@@ -148,7 +148,7 @@ Generating frontpage
 项目结构
 -------
 
-A project structure example which follows some recommendation from Go standard project layout: https://github.com/golang-standards/project-layout
+项目结构参考go的项目部局: https://github.com/golang-standards/project-layout
 
 ```
 Project A
@@ -168,17 +168,15 @@ Project A
 └───var
 ```
 
-- cmd/main.go which is the starting point. It can be any nam&any structure as long as it can run as entry point.
+- cmd/main.go 启动文件
 - configs
-   - dm.yaml: main configuration
-   - contenttype.yaml: content model configuration
-   - policies.yaml: policies configuration for permission related
-   - [optional]temlate_override.yaml (only needed if you use templating)
-- entity: generated ORM-like entities
-- [optional]handlers: callback for events
-- [optional]fieldtype: if you have custom fieldtype
-- [optional]web/templates: only needed if you need templating for website
-- [optional]rest/api: can be use for rest api
-- [optional]var for generated web resources(eg. uploaded images): It doesn't need to be under this directory(configurable in dm.yaml) as long as it's visitable from web(for instance via nginx).
-
-Note: all the .go related folders can be in any structure as long as they can be imported. The only required structure for Digimaker is the config files structure.
+   - dm.yaml: 主要配置文件
+   - contenttype.yaml: 数据模型配置
+   - policies.yaml: 权限策略配置
+   - [可选]temlate_override.yaml (模板覆盖规则)
+- entity: 自动生成的像ORM实体
+- [可选]handlers: 回调go代码
+- [可选]fieldtype: 自定义域类型
+- [可选]web/templates: 模板
+- [可选]rest/api: 远程rest api
+- [可选]var 生成的资源(如上传的图片, 文件等), 在production建议用外部web服务器(如nginx)来托管这个文件夹
