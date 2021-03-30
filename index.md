@@ -32,9 +32,9 @@ nav_order: 0
 
 ### API接口
  - 模板: [模板](references/template)
- - 客户端/Rest API: [Rest API](references/rest), [客户端react库digimaker-ui](references/digimaker-ui)
+ - 客户端/Rest API(正在添加): [Rest API](references/rest), [客户端react库digimaker-ui](references/digimaker-ui)
  - 服务端: [Go API](references/go)
- - 配置文件: [dm.yaml](references/dm), [contenttype.json](references/contenttype), [template_override.yaml](references/template-override), [policies.yaml](references/policies)
+ - 配置文件(正在添加): [dm.yaml](references/dm), [contenttype.json](references/contenttype), [template_override.yaml](references/template-override), [policies.yaml](references/policies)
 
 ### 后台管理(后台编辑界面/eui)
 如下是eui的基本界面, 界面可定制, 如工具, 显示哪些, 列表表, 主题等. 你也可以添加自定义的功能.
