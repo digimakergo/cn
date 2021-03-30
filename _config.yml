@@ -21,7 +21,7 @@
 title: Digimaker CMF文档
 email: post@digimaker.com
 description: >- # this means to ignore newlines until "baseurl:"
-  A high performance, simple and flexible Content Management Framework in Golang.
+ 高性能, 简单且灵活的内容管理框架, Go语言编写
 baseurl: "/cn" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
