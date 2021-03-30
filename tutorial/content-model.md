@@ -61,9 +61,9 @@ Digimaker CMF的设计理念是, 通过一些模型配置, 自动生成类似于
 
 ### 配置模型
 
-模型配置文件是config/contenttype.json, 配置好文件后运行命令可生成相应的实体(entity).
+模型配置文件是config/contenttype.json, 配置好文件后运行命令可生成相应的实体(entity), 生成实体且重启服务后, 定义的属性自动会出现在后台管理界面上.
 
-[模型配置文件参考文档](../references/contenttype)
+[查看模型配置文件参考文档](../references/contenttype)
 
 以下是dmdemo的例子, 每次修改contenttype.json后需要运行此命令来更新对应的enitity, 生成的entity会在entity目录下(如dmdemo/entity).
 
