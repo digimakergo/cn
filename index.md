@@ -17,7 +17,7 @@ nav_order: 0
 ### Digimaker提供哪些
 - 服务端的Go库 
 - 模板语言(用于输出html)
-- 远程访问接口REST api
+- 远程访问接口REST API
 - 客户端的库(digimaker-ui, 基于react)用于开发web应用
 - 后台管理客户端(eui, 基于react)用于后台管理
 
