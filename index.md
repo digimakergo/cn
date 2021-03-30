@@ -16,10 +16,10 @@ nav_order: 0
 
 
 ### 文章&教程 (正在添加)
+ - [基本概念及如何建模](tutorial/content-model)
  - [如何开发网站](tutorial/)
  - [如何使用客户端库(digimaker-ui)和rest api开发web应用](tutorial/)
  - [如何开发服务端(扩展rest api,Content handler, fieldtype)](tutorial/)
- - [内容模型以及如何配置](tutorial/content-model)
  - [在线日志/调试工具](tutorial/)
  - [用户登陆机制](tutorial/)
 
