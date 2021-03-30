@@ -148,7 +148,7 @@ Generating frontpage
 项目结构
 -------
 
-项目结构参考go的项目部局: https://github.com/golang-standards/project-layout
+项目结构参考了go的项目布局建议: https://github.com/golang-standards/project-layout
 
 ```
 Project A
