@@ -26,7 +26,7 @@ nav_order: 2
  //启动服务器
  dmapp=. go run cmd/main.go
 ```
-  访问网站: http://localhost:9200
+  访问网站: [http://localhost:9200](http://localhost:9200)
 
 前台web app
 
@@ -36,7 +36,7 @@ nav_order: 2
    npm run build
    (或者直接 "npm start" 然后访问http://localhost:3000)
 ```
-  访问: http://localhost:9200/mypage (登陆信息: `member/digimaker`)
+  访问: [http://localhost:9200/mypage](http://localhost:9200/mypage) (登陆信息: `member/digimaker`)
 
 ### 运行后台(管理员界面)
  
@@ -47,7 +47,7 @@ nav_order: 2
    npm install
    npm start
    ```
-查看后台: http://localhost:3000 登陆信息: `admin/Digimaker`
+查看后台: [http://localhost:3000](http://localhost:3000) 登陆信息: `admin/Digimaker`
 
 
 代码说明
