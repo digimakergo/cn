@@ -6,16 +6,16 @@ nav_order: 50
 ---
 
 # Roadmap
-This is an overview of roadmap of digimaker CMF. The list will be updated within time.
+以下是Digimaker的路线图, 我们将及时更新本文档.
 
-Current version:
+当前版本:
 0.1beta1
 {: .label .label-yellow }
 
-### Wishlist
-- Graphic QL support(hope in 0.2 or 0.1.1)
-- Support join for non-location content, which is helpful also for eui's custom column & potencially graphic QL.
-- Support multi-image upload
-- Implement administrative console for debug purpose.
-- Support attribute level permission configuration
-- Support variables in permision configuration
+### 希望的功能
+- 支持GraphicQL(希望在版本0.2或0.1.1)
+- 支持Vue的客户端组件(目前仅有支持react的)
+- 支持内容间的join
+- 支持多图片上传
+- 支持属性及的权限
+- 权限配置支持变量
