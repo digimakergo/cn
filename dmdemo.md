@@ -44,7 +44,7 @@ nav_order: 2
    npm run build
    (或者直接 "npm start" 然后访问http://localhost:3000)
 ```
-  访问: [http://localhost:9200/mypage](http://localhost:9200/mypage) (登陆信息: `member/digimaker`)
+  访问: [http://localhost:9200/mypage](http://localhost:9200/mypage) (登陆信息: `member/digimaker`) 以下是大致截图: 
   
   <a href="https://raw.githubusercontent.com/digimakergo/cn/master/dmdemo-login.png"><img src="https://raw.githubusercontent.com/digimakergo/cn/master/dmdemo-login.png" width="600px"/></a>
   
