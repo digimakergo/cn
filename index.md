@@ -18,8 +18,8 @@ nav_order: 0
 - 服务端的Go库 
 - 模板语言(用于输出html)
 - rest api
-- 客户端的库(digimaker-ui, 用react+typescript编写)
-- 客户端的后台管理库(eui, 用react+typescript编写)
+- 客户端的库(digimaker-ui, 基于react)
+- 客户端的后台管理库(eui, 基于react)
 
 ### 文章&教程
  - [内容模型简介及理念](tutorial/content-model)
