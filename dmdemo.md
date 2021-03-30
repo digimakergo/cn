@@ -32,7 +32,7 @@ nav_order: 2
 ```
   访问网站: [http://localhost:9200](http://localhost:9200)
   
-  <a href="./dmdemo-site.png"><img src="./dmdemo-site.png" width="600px"/></a>
+  <a href="https://raw.githubusercontent.com/digimakergo/cn/master/dmdemo-site.png"><img src="https://raw.githubusercontent.com/digimakergo/cn/master/dmdemo-site.png" width="600px"/></a>
 
 前台web app
 
@@ -44,11 +44,11 @@ nav_order: 2
 ```
   访问: [http://localhost:9200/mypage](http://localhost:9200/mypage) (登陆信息: `member/digimaker`)
   
-  <a href="./dmdemo-login.png"><img src="./dmdemo-login.png" width="600px"/></a>
+  <a href="https://raw.githubusercontent.com/digimakergo/cn/master/dmdemo-login.png"><img src="https://raw.githubusercontent.com/digimakergo/cn/master/dmdemo-login.png" width="600px"/></a>
   
-  <a href="./dmdemo-photo.png"><img src="./dmdemo-photo.png" width="600px"/></a>
+  <a href="https://raw.githubusercontent.com/digimakergo/cn/master/dmdemo-photo.png"><img src="https://raw.githubusercontent.com/digimakergo/cn/master/dmdemo-photo.png" width="600px"/></a>
 
-  <a href="./dmdemo-add.png"><img src="./dmdemo-add.png" width="600px"/></a>
+  <a href="https://raw.githubusercontent.com/digimakergo/cn/master/dmdemo-add.png"><img src="https://raw.githubusercontent.com/digimakergo/cn/master/dmdemo-add.png" width="600px"/></a>
   
 ### 运行后台(管理员界面)
  
