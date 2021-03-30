@@ -12,8 +12,15 @@ nav_order: 0
 *说明: 本文档还在编写中, 产品还未发布(目前beta版, 但大部分接口已经定型了). 提问请联系QQ: 164076556, 然后联系人会给你发微信群二维码(因为二维码有时间限制目前只能这样)*
 
 ### 安装
-最简单的安装方式是克隆并运行demo项目: [https://github.com/digimakergo/dmdemo](https://github.com/digimakergo/dmdemo), [中文说明](demo).
+最简单的安装方式是克隆并运行demo项目: [https://github.com/digimakergo/dmdemo](https://github.com/digimakergo/dmdemo), [中文说明](demo). 
 
+### Digimaker提供哪些
+Digimaker提供
+- 一个服务端的Go库 
+- 模板语言(用于输出html)
+- rest api
+- 客户端的库(digimaker-ui, 用react+typescript编写)
+- 客户端的后台管理库(eui, 用react+typescript编写)
 
 ### 文章&教程
  - [内容模型简介及理念](tutorial/content-model)
