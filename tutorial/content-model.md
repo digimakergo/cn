@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 内容基本概念
+title: 基本概念
 parent: 教程文章
 permalink: /tutorial/content-model
 nav_order: 1
