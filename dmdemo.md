@@ -20,7 +20,7 @@ nav_order: 2
  git clone https://github.com/digimakergo/dmdemo.git
 
  //建议运行如下命令(只用于发布前的beta版)
- go get -v github.com/digimakergo/digimaker
+ go get -u github.com/digimakergo/digimaker
 
  //导入数据
  //remember to change configs/dm.yaml's database connection.
