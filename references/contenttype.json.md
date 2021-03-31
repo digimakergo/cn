@@ -92,7 +92,7 @@ nav_order: 50
 | identifier      | 标识符, 只能用小写+下划线 | 
 | type      | 类型      |  
 | name | 属性名      |   
-| is_output|是否是输出属性, 作为表单的头时有用如<h2>|
+| is_output|是否是输出属性, 作为表单的头时有用如需要用到h2时|
 | required | 是否是必须的 |
 | parameters | 参数, 根据域类型不一样参数不一样, 详见各域类型 |
 | validation | 验证信息, 根据哉类型不一样参数不一样 |
