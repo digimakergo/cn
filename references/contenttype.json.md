@@ -6,8 +6,7 @@ permalink: /references/contenttype
 nav_order: 50
 ---
 
-# contenttype.json
-
+内容类型配置文件
 
 <details open markdown="block">
   <summary>
