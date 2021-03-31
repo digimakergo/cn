@@ -39,7 +39,7 @@ nav_order: 0
 ### 后台管理(后台编辑界面/eui)
 如下是eui的基本界面, 界面可定制, 如工具, 显示哪些, 列表表, 主题等. 你也可以添加自定义的功能.
 
-<a href="https://raw.githubusercontent.com/digimakergo/eui/master/doc/eui-1.png"><img src="https://raw.githubusercontent.com/digimakergo/eui/master/doc/eui-1.png" width="700px" /></a>
+<a href="./assets/images/eui-1.png"><img src="./assets/images/eui-1.png" width="700px" /></a>
 
 [定制eui](eui/)
 
