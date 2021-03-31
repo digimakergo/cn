@@ -34,7 +34,7 @@ nav_order: 2
 ### 访问网站
   访问: [http://localhost:9200](http://localhost:9200)
   
-  <a href="./assets/images/dmdemo-site.png"><img src="./assets/images/dmdemo-site.png" width="600px"/></a>
+  <a href="../assets/images/dmdemo-site.png"><img src="../assets/images/dmdemo-site.png" width="600px"/></a>
 
 ### 访问前台web app
 
@@ -46,11 +46,11 @@ nav_order: 2
 ```
   访问: [http://localhost:9200/mypage](http://localhost:9200/mypage) (登陆信息: `member/digimaker`) 以下是大致截图: 
   
-  <a href="./assets/images/dmdemo-login.png"><img src="./assets/images/dmdemo-login.png" width="600px"/></a>
+  <a href="../assets/images/dmdemo-login.png"><img src="../assets/images/dmdemo-login.png" width="600px"/></a>
   
-  <a href="./assets/images/dmdemo-photo.png"><img src="./assets/images/dmdemo-photo.png" width="600px"/></a>
+  <a href="../assets/images/dmdemo-photo.png"><img src="../assets/images/dmdemo-photo.png" width="600px"/></a>
 
-  <a href="./assets/images/dmdemo-add.png"><img src="./assets/images/dmdemo-add.png" width="600px"/></a>
+  <a href="../assets/images/dmdemo-add.png"><img src="../assets/images/dmdemo-add.png" width="600px"/></a>
   
 ### 运行后台(管理员界面)
  
