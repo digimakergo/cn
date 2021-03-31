@@ -8,6 +8,16 @@ nav_order: 50
 
 # contenttype.json
 
+
+<details open markdown="block">
+  <summary>
+    内容列表
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
 ### 例子
 
 文章
