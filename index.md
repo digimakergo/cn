@@ -34,7 +34,7 @@ nav_order: 0
  - 模板: [模板](references/template)
  - 客户端/Rest API: [Rest API](references/rest), [客户端组件digimaker-ui](references/digimaker-ui)(正在添加)
  - 服务端: [Go API](references/go)
- - 配置文件(正在添加): [dm.yaml](references/dm), [contenttype.json](references/contenttype), [template_override.yaml](references/template-override), [policies.yaml](references/policies)
+ - 配置文件: [dm.yaml](references/dm)(正在添加), [contenttype.json](references/contenttype), [template_override.yaml](references/template-override)(正在添加), [policies.yaml](references/policies)(正在添加)
 
 ### 后台管理(后台编辑界面/eui)
 如下是eui的基本界面, 界面可定制, 如工具, 显示哪些, 列表表, 主题等. 你也可以添加自定义的功能.
