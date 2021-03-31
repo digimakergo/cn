@@ -7,22 +7,24 @@ nav_order: 15
 has_doc: true
 ---
 
+***注: 本文档还在编写中***
+
 <details open markdown="block">
   <summary>
-    Table of contents
+    内容列表
   </summary>
   {: .text-delta }
 1. TOC
 {:toc}
 </details>
 
-## Basis
+## 基本用法
 
-**Examples**
+**例子**
 
-Get content by id:
-Request: `/content/get/3`
-Response:
+通过id获取内容:
+请求: `/content/get/3`
+返回:
 ```json
 {
   "cid": 3,
@@ -41,9 +43,9 @@ Response:
   ...
 }
 ```
-Get content list:
-Request: `/content/list/folder?parent=3&level=1&sortby=priority%20desc%3Bmodified%20desc&limit=20&offset=0`
-Response:
+取得内容列表:
+请求: `/content/list/folder?parent=3&level=1&sortby=priority%20desc%3Bmodified%20desc&limit=20&offset=0`
+返回:
 ```json
 {
   "list": [
@@ -74,7 +76,7 @@ Response:
 }
 ```
 
-## Content fetch
+## 查询内容
 
 ### content/get
 
@@ -96,7 +98,7 @@ Response:
 
 ### content/setpriority
 
-## Authorization
+## 用户认证
 ### auth/auth
 
 ### auth/token/revoke
@@ -106,7 +108,7 @@ Response:
 ### auth/token/renew-accesstoken
 
 
-## User
+## 用户相关
 ### user/current
 
 ### user/resetpassword
@@ -115,10 +117,10 @@ Response:
 
 ### user/enable
 
-## Content model
+## 内容模型
 ### contenttype/get
 
-## Utility
+## 工具
 ### util/uploadfile
 
 ### util/uploadimage
