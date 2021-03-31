@@ -6,7 +6,7 @@ permalink: /references/contenttype
 nav_order: 50
 ---
 
-contenttype.json
+# contenttype.json
 
 ### 例子
 
