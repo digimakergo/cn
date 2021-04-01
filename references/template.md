@@ -9,7 +9,7 @@ has_toc: true
 
 <details open markdown="block">
   <summary>
-    Template
+    模板
   </summary>
   {: .text-delta }
 1. TOC
