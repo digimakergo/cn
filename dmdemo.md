@@ -42,7 +42,7 @@ nav_order: 2
    cd web/app
    npm install
    npm run build
-   (或者直接 "npm start" 然后访问http://localhost:3000)
+   (或者直接 "npm start" 然后访问http://localhost:3001)
 ```
   访问: [http://localhost:9200/mypage](http://localhost:9200/mypage) (登陆信息: `member/digimaker`) 以下是大致截图: 
   
