@@ -58,7 +58,10 @@ Digimaker CMF内容模型的设计理念是, 通过一些配置, 自动生成类
 **因此digimaker可适用于开发一般的web系统. 相比典型的cms系统, digimaker提供企业级的的内容模型, 而相比纯粹的web框架, digimaker自带与内容相关的功能(如输入界面, 查询操作api, 权限管理, 日志调试等), 当然digimaker也可与web框架一起使用.**
 
 
-### 配置模型
+### 内容模型贯穿在所有api中
+上面提到的数据模型贯穿在所有digimaker的api中, 包括[Go api](../references/go)(如查询, 创建等), [REST API](../references/rest), [模板API](../references/template)中, 
+
+### 如何配置模型?
 
 模型配置文件是config/contenttype.json, 配置好文件后运行命令可生成相应的实体(entity), 生成实体且重启服务后, 定义的属性自动会出现在后台管理界面上.
 
