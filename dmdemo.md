@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 安装演示项目
+title: 演示项目
 permalink: /demo/
 nav_order: 2
 ---
