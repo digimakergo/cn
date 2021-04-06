@@ -117,7 +117,7 @@ nav_order: 50
 | checkbox      | 复选框 |  |
 | relation      | 一个关系, 比如一本书的出版商 | "type": "<如publisher>" - 只能是出版商与本内容关联 |
 | relationlist  | 多个关系, 比如文章要关系多张图片时 | "type": "<如image>" - 只能是图片与本内容关联 |
-| image      | 图片 |  | 
+| image      | 图片 | "format": "" - 图片支持的格式, 小写, 用逗号隔开(可以空格). 如"jpg, png" | 
 
 ***(更多类型的文档正在添加)***
 
