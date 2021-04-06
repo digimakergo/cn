@@ -113,11 +113,11 @@ nav_order: 50
 | text      | 文本 |  | 
 | richtext      | 富文本 | "mode":"compact/full", 简易模式或全模式, 默认全模式 |
 | datetime      | 时间日期 | "dateonly": true/false | 
-| image      | 图片 |  | 
 | container      | 容器, 一个用于包含其它域的类型 |  |
 | checkbox      | 复选框 |  |
 | relation      | 一个关系, 比如一本书的出版商 | "type": "<如publisher>" - 只能是出版商与本内容关联 |
 | relationlist  | 多个关系, 比如文章要关系多张图片时 | "type": "<如image>" - 只能是图片与本内容关联 |
+| image      | 图片 |  | 
 
 ***(更多类型的文档正在添加)***
 
