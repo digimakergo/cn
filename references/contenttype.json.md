@@ -113,6 +113,7 @@ nav_order: 50
 | text      | 文本 |  | 
 | richtext      | 富文本 | "mode":"compact/full", 简易模式或全模式, 默认全模式 |
 | datetime      | 时间日期 | "dateonly": true/false | 
+| image      | 图片 |  | 
 | container      | 容器, 一个用于包含其它域的类型 |  |
 | checkbox      | 复选框 |  |
 | relation      | 一个关系, 比如一本书的出版商 | "type": "<如publisher>" - 只能是出版商与本内容关联 |
