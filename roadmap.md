@@ -13,6 +13,7 @@ nav_order: 50
 {: .label .label-yellow }
 
 ### 希望的功能
+- 支持内容属性类型relationlist_json
 - 支持Sqllite和PostgreSQL
 - 支持GraphQL(希望在版本0.2或0.1.1)
 - 支持Vue的客户端组件(目前仅有支持react的)
