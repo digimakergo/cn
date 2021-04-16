@@ -18,6 +18,7 @@ nav_order: 50
 - 支持GraphQL(希望在版本0.2或0.1.1)
 - 支持Vue的客户端组件(目前仅有支持react的)
 - 支持内容间的join
+- 支持SSG(Static Site Generator)模式: CMF只提供api,生成md, 最后通过SSG的模板生成html - 可以适合小站点且无模板登陆功能. 好处是以后可能只需要学一种模板语言.
 - 模板独立出来, 且支持rest/micro service&GraphQL查询?
 - 支持属性级别的权限
 - 权限配置支持变量
