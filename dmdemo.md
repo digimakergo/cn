@@ -53,14 +53,16 @@ nav_order: 2
   <a href="../assets/images/dmdemo-add.png"><img src="../assets/images/dmdemo-add.png" width="600px"/></a>
   
 ### 运行后台(管理员界面)
- 
-  建议把eui放在dmdemo/web下, 详见本文章底端的说明
+   
   ```sh
-   git clone https://github.com/digimakergo/eui.git
-   cd eui
+   cd web/admin
    npm install
+   mkdir assets ## 只是beta版   
+   cp -r node_module/tinymce assets/ ## For beta version only
    npm start
    ```
+   
+   
 查看后台: [http://localhost:3000](http://localhost:3000) 登陆信息: `admin/Digimaker`
 
 
