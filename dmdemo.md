@@ -26,6 +26,9 @@ nav_order: 2
  //建数据库并导入数据
  //注: 同时要修改configs/dm.yaml数据库连接信息.
  mysql -u {username} -p {database} < data/dmdemo.sql
+ 
+ //如果是mysql8, 用root登陆mysql后运行如下: (只适用于beta版)
+ SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
 
  //启动服务器, 注: Windows用户 - 因windows不支持命令行集成环境变量, 须把环境变量dmapp设置到dmdemo目录, 然后运行go run cmd/main.go
  dmapp=. go run cmd/main.go
